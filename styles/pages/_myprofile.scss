@@ -1,0 +1,256 @@
+.my-profile {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.my-profile .sidebar {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 20%;
+}
+
+.my-profile .details {
+  width: 80%;
+}
+
+.my-profile .sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.my-profile .sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+.my-profile .sidebar ul li.active {
+  background-color: #2aaefc;
+  color: white;
+}
+// .my-profile .sidebar ul li:last-child {
+//   border-bottom: transparent;
+// }
+.my-profile .sidebar ul li:hover {
+  background-color: #2aaefc;
+  color: white;
+}
+
+.profile-layout {
+  padding: 28px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.profile-layout .heading {
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #ddd;
+  font-size: 28px;
+  color: #333333;
+}
+
+.profile-layout .details {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.account-details input {
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 11px 25px;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #333333;
+}
+
+.account-details h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.account-details button {
+  display: inline-block;
+  width: auto;
+  padding: 16px 45px;
+  border-radius: 3px;
+  background-color: #2aaefc;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.account-details button:hover {
+  background-color: #333333;
+}
+
+// subscription-details
+.subscription-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .plan-details {
+    width: 100%;
+    padding: 30px 17px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 20px;
+      color: #23262f;
+      margin: 0;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .plan-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h4 {
+          margin: 0;
+          color: #23262f;
+          font-size: 20px;
+        }
+
+        span {
+          color: #777e90;
+          font-size: 16px;
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      padding: 8px 22px;
+      background-color: rgb(201, 43, 43);
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+
+  .trans-history {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .single-trans {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+
+      h3 {
+        font-size: 18px;
+        color: #23262f;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .trans-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        h4 {
+          font-size: 18px;
+          color: #23262f;
+          font-weight: 500;
+          margin: 0;
+        }
+
+        span {
+          font-size: 16px;
+          color: #777e90;
+        }
+      }
+    }
+  }
+}
+
+.subscription-cancel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+  .confirmation {
+    background-color: white;
+    width: 30%;
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+
+    .success {
+      color: #2aaefc;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+
+      button {
+        padding: 8px 30px;
+        display: inline-block;
+        border: none;
+        border-radius: 5px;
+      }
+      .confirm {
+        background-color: #2aaefc;
+        color: white;
+      }
+    }
+  }
+}

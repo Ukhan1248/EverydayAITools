@@ -1,0 +1,35 @@
+.profile-tab.nav-tabs {
+  li {
+    .nav-link {
+      border: 0;
+      padding: 15px 20px;
+      &.active {
+        border-bottom: 2px solid #009efb;
+        color: #009efb;
+      }
+    }
+  }
+}
+.text-dark-white {
+  color: #fff;
+}
+.todo-widget .todo-list .completed label {
+  text-decoration: line-through;
+}
+.noteText {
+  width: 263px;
+}
+
+.error-title {
+  font-size: 210px;
+  font-weight: 900;
+  text-shadow: 4px 4px 0 #fff, 6px 6px 0 #263238;
+  line-height: 210px;
+}
+
+@media (max-width: 1024px) {
+  .error-title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
